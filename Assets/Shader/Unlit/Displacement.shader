@@ -6,16 +6,21 @@ Shader "Unlit/Displacement"
         _Displacement("Displacement", Range(0,1)) = 0.3
         _Color("Color", Color) = (1,1,1,1)
     }
-    SubShader
+    // multiple and different subshader possible (like one for PC and one for PS4)
+    SubShader                                                
     {
+        //Setup for renderer (Rendering Order)
         Tags { "RenderType"="Opaque" }
 
+        // single instruction for GPU is Pass
+        // A Pass is the fundamental element of a Shader object. It contains instructions for setting the state of the GPU, and the shader programs that run on the GPU.
         Pass
         {
             CGPROGRAM
             #pragma vertex vertexFunction
             #pragma fragment fragmentFunction
 
+            // include at compiletime helper functions
             #include "UnityCG.cginc"
 
             float4 _Color;
@@ -23,13 +28,16 @@ Shader "Unlit/Displacement"
 
             struct appdata
             {
+                // inforamtion of vertices (x,y,z,w) its a packed array
                 float4 vertex : POSITION;
+
                 float2 uv : TEXCOORD0;
                 float3 normal : NORMAL;
             };
 
             struct v2f
             {
+                // SV_Position = Screenspace Position
                 float4 vertex : SV_POSITION;
                 float2 uv : TEXCOORD0;
             };
@@ -46,6 +54,7 @@ Shader "Unlit/Displacement"
                 return OUT;
             }
 
+            //SV-Target = Rendertarget (e.g. Framebuffer of the Screen)
             fixed4 fragmentFunction(v2f i) : SV_Target
             {
                 // sample the texture
