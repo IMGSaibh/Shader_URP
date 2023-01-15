@@ -92,14 +92,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _Amount: 0.161
+    - _Amount: 0.088
     - _Amplitude: 2.33
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
-    - _CutOutThresh: 0.103
+    - _CutOutThresh: 0
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
