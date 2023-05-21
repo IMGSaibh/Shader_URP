@@ -1829,10 +1829,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1053.0003662109375,
-            "y": 829.0,
+            "x": -1066.0,
+            "y": 828.0000610351563,
             "width": 138.99993896484376,
-            "height": 34.00006103515625
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -2509,10 +2509,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -786.0000610351563,
-            "y": 789.0000610351563,
-            "width": 207.999755859375,
-            "height": 434.99993896484377
+            "x": -778.0,
+            "y": 788.0,
+            "width": 208.0,
+            "height": 435.0
         }
     },
     "m_Slots": [
@@ -3041,7 +3041,7 @@
     "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
     "m_ObjectId": "fd08118d82104b189f989d228fc923e9",
     "m_Title": "Spherical Mapping",
-    "m_Content": "Math was take from here:\nhttps://gamedev.stackexchange.com/questions/197931/how-can-i-correctly-map-a-texture-onto-a-sphere\n\nThere are others ways to it for good earth mapping\n\nEquirectangular mapping devotes a bit too much space to tiny regions at the poles.",
+    "m_Content": "Math was taken from here:\nhttps://gamedev.stackexchange.com/questions/197931/how-can-i-correctly-map-a-texture-onto-a-sphere\n\nThere are others ways to it for good earth mapping\n\nEquirectangular mapping devotes a bit too much space to tiny regions at the poles.",
     "m_TextSize": 0,
     "m_Theme": 0,
     "m_Position": {
