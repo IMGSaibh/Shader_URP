@@ -45,10 +45,14 @@ Shader "Unlit/Displacement"
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
+            // appdata is standard struct for vertex
             v2f vertexFunction(appdata v)
             {
                 v2f OUT;
-                v.vertex.xyz = v.vertex.xyz + (v.normal.xyz * _Displacement);
+                // parameter form of a linear equation.
+                // vertex = P + nU -> U is normal
+                // Movement of the vertex along the normal
+                v.vertex.xyz = v.vertex.xyz + _Displacement * v.normal.xyz;
                 OUT.vertex = UnityObjectToClipPos(v.vertex);
                 OUT.uv = v.uv;
                 return OUT;
