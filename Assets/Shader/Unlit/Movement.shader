@@ -52,12 +52,15 @@ Shader "Unlit/Movement"
                     v2f o;
                     // we remain in object space for now
                     // _Time.y is the time in seconds
+                    // f(x) = sin((_Time.y * _Speed) + (x * period)) * Distance * Amount
+                    // x is vertex.y  
                     v.vertex.x += sin(_Time.y * _Speed + v.vertex.y * _Period) * _Distance * _Amount;
 
                     o.vertex = UnityObjectToClipPos(v.vertex);
 
-                    //TRANSFORM_TEX = takes uv data from model
+                    //TRANSFORM_TEX = takes uv data from model short
                     o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+                    // this is also possible o.uv = v.uv;
                     return o;
                 }
 
