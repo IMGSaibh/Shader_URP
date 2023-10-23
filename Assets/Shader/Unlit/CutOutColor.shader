@@ -55,7 +55,8 @@ Shader "Unlit/CutOutColor"
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
                 col.a = _Transparency;
-                // same as if(col.r < _CutOutThresh) discard;
+                // same as if(x < 0){ discard };
+                // for x we give (col.r - _CutOutThresh) as argument 
                 clip(col.r - _CutOutThresh);
                 return col;
             }
