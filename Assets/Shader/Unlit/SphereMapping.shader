@@ -55,7 +55,13 @@ Shader "Unlit/SphereMapping"
             {
                 float PI = 3.14159265359;
                 float3 N = normalize(i.normal);
-                half longitude_uv = 0.5 - atan2(N.z, N.x) / (2 * PI);
+
+                /*
+                we need arcustangens2 -> atan2 since we 
+                convert plane cartesian coordinates into polar coordinates
+                on the sphere
+                */
+                half longitude_uv = atan2(N.z, N.x) / (2 * PI);
                 half latitude_uv =  0.5 + asin(N.y) / PI;
                 float2 sphericalUV = float2(longitude_uv, latitude_uv);
                 
