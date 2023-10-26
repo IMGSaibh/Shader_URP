@@ -108,30 +108,6 @@
             "m_Id": "c1ed93992460489c8a6f28687f00bf8f"
         },
         {
-            "m_Id": "a966a74f3e8543f384d3a4b3f63c3aa2"
-        },
-        {
-            "m_Id": "198c5389264344bb9ecf2fc6dfbb4086"
-        },
-        {
-            "m_Id": "661b61f9732e4aa1bd9137e0a00d5e99"
-        },
-        {
-            "m_Id": "99586de2cdfc446b80731de47e1a0890"
-        },
-        {
-            "m_Id": "0f88a25461a746ab92051c4e4fba5821"
-        },
-        {
-            "m_Id": "3e774e400454450aaecc7b1ca3bd0440"
-        },
-        {
-            "m_Id": "ab44ccfb23a24ea7b78bb5a737bf552c"
-        },
-        {
-            "m_Id": "2c6c3a5f5e21483daa8db2ddb63fe6d8"
-        },
-        {
             "m_Id": "5d9fffccc0af4b87afdad3eccc6e2521"
         }
     ],
@@ -424,8 +400,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": -140.0001983642578,
-            "y": 428.99993896484377
+            "x": -139.9999237060547,
+            "y": 332.0000305175781
         },
         "m_Blocks": [
             {
@@ -441,8 +417,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": -140.0001983642578,
-            "y": 629.0
+            "x": -140.00001525878907,
+            "y": 576.0
         },
         "m_Blocks": [
             {
@@ -563,17 +539,6 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.GroupData",
-    "m_ObjectId": "0f88a25461a746ab92051c4e4fba5821",
-    "m_Title": "New Group",
-    "m_Position": {
-        "x": -129.5720672607422,
-        "y": 438.9999694824219
     }
 }
 
@@ -777,8 +742,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2345.0,
-            "y": 1328.0,
+            "x": -2208.0,
+            "y": 1232.0001220703125,
             "width": 145.0,
             "height": 112.0
         }
@@ -801,17 +766,6 @@
         "m_SerializableColors": []
     },
     "m_constant": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.GroupData",
-    "m_ObjectId": "198c5389264344bb9ecf2fc6dfbb4086",
-    "m_Title": "New Group",
-    "m_Position": {
-        "x": -129.5720672607422,
-        "y": 438.9999694824219
-    }
 }
 
 {
@@ -955,17 +909,6 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.GroupData",
-    "m_ObjectId": "2c6c3a5f5e21483daa8db2ddb63fe6d8",
-    "m_Title": "New Group",
-    "m_Position": {
-        "x": -129.5720672607422,
-        "y": 438.9999694824219
-    }
 }
 
 {
@@ -1149,9 +1092,9 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": -3878.0,
-            "y": 1139.0,
+            "y": 1137.0,
             "width": 208.0,
-            "height": 315.0001220703125
+            "height": 315.0
         }
     },
     "m_Slots": [
@@ -1205,17 +1148,6 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.GroupData",
-    "m_ObjectId": "3e774e400454450aaecc7b1ca3bd0440",
-    "m_Title": "New Group",
-    "m_Position": {
-        "x": -129.5720672607422,
-        "y": 438.9999694824219
     }
 }
 
@@ -1409,10 +1341,10 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "5d9fffccc0af4b87afdad3eccc6e2521",
-    "m_Title": "Direction",
+    "m_Title": "Direction Latitude",
     "m_Position": {
-        "x": -3903.34130859375,
-        "y": 1080.0
+        "x": -3903.0,
+        "y": 1078.0001220703125
     }
 }
 
@@ -1429,17 +1361,6 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.GroupData",
-    "m_ObjectId": "661b61f9732e4aa1bd9137e0a00d5e99",
-    "m_Title": "New Group",
-    "m_Position": {
-        "x": -129.5720672607422,
-        "y": 438.9999694824219
-    }
 }
 
 {
@@ -1554,7 +1475,7 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": -3584.0,
-            "y": 1139.0,
+            "y": 1137.0,
             "width": 208.0,
             "height": 278.0
         }
@@ -1978,17 +1899,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.GroupData",
-    "m_ObjectId": "99586de2cdfc446b80731de47e1a0890",
-    "m_Title": "New Group",
-    "m_Position": {
-        "x": -129.5720672607422,
-        "y": 438.9999694824219
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "9b485fcb2db548339b3a64b161495160",
     "m_Id": 0,
@@ -2172,17 +2082,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.GroupData",
-    "m_ObjectId": "a966a74f3e8543f384d3a4b3f63c3aa2",
-    "m_Title": "New Group",
-    "m_Position": {
-        "x": -129.5720672607422,
-        "y": 438.9999694824219
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "a990b21b6e1540bfa505db9405adf4bf",
     "m_Id": 2,
@@ -2194,17 +2093,6 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.GroupData",
-    "m_ObjectId": "ab44ccfb23a24ea7b78bb5a737bf552c",
-    "m_Title": "New Group",
-    "m_Position": {
-        "x": -129.5720672607422,
-        "y": 438.9999694824219
-    }
 }
 
 {
@@ -2297,7 +2185,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "c1ed93992460489c8a6f28687f00bf8f",
-    "m_Title": "Direction",
+    "m_Title": "Direction Longitude",
     "m_Position": {
         "x": -3337.999755859375,
         "y": 291.99981689453127
@@ -2947,8 +2835,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3047.999755859375,
-            "y": 1035.0,
+            "x": -3088.0,
+            "y": 1104.0,
             "width": 152.0,
             "height": 34.0
         }
