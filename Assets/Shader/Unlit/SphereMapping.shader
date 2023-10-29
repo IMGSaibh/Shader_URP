@@ -66,8 +66,7 @@ Shader "Unlit/SphereMapping"
                 float2 sphericalUV = float2(longitude_uv, latitude_uv);
                 
                 // sample the texture
-                fixed4 col = tex2D(_MainTex, sphericalUV);
-                return col;
+                return tex2D(_MainTex, sphericalUV);
             }
             ENDCG
         }
