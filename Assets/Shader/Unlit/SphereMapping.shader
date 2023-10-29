@@ -18,6 +18,10 @@ Shader "Unlit/SphereMapping"
 
             #include "UnityCG.cginc"
 
+            const float PI = 3.14159265359;
+            sampler2D _MainTex;
+            float4 _MainTex_ST;
+
             struct appdata
             {
                 // POSITION is the vertex position, typically a float3 or float4.
@@ -33,9 +37,6 @@ Shader "Unlit/SphereMapping"
                 float3 normal : TEXCOORD0;
 
             };
-
-            sampler2D _MainTex;
-            float4 _MainTex_ST;
         
             v2f vert (appdata v)
             {
@@ -53,16 +54,13 @@ Shader "Unlit/SphereMapping"
             // color ("SV_Target" semantic)
             fixed4 frag (v2f i) : SV_Target
             {
-                float PI = 3.14159265359;
-                float3 N = normalize(i.normal);
-
                 /*
                 we need arcustangens2 -> atan2 since we 
                 convert plane cartesian coordinates into polar coordinates
                 on the sphere
                 */
-                half longitude_uv = atan2(N.z, N.x) / (2 * PI);
-                half latitude_uv =  0.5 + asin(N.y) / PI;
+                half longitude_uv = atan2(i.normal.z, i.normal.x) / (2 * PI);
+                half latitude_uv =  0.5 + asin(i.normal.y) / PI;
                 float2 sphericalUV = float2(longitude_uv, latitude_uv);
                 
                 // sample the texture

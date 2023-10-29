@@ -50,8 +50,7 @@ Shader "Unlit/Displacement"
             {
                 v2f OUT;
                 // parameter form of a linear equation.
-                // vertex = P + nU -> U is normal
-                // Movement of the vertex along the normal
+                // vertex = P + nU -> U is parameterized straight line equation along the normal line
                 v.vertex.xyz = v.vertex.xyz + _Displacement * v.normal.xyz;
                 OUT.vertex = UnityObjectToClipPos(v.vertex);
                 OUT.uv = v.uv;
