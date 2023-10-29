@@ -54,10 +54,11 @@ Shader "Unlit/Clip_Object_to_Object"
             {
                 float distance = dot(i.worldPos, _Plane.xyz);
                 distance = distance + _Plane.w;
-                // discard surface above plane which clips this object
+                // if plane distance to object = 0
+                // we discard surface above plane which clips this object
+                // we use minus so that object is clipped by moving plane top to Botton 
                 clip(-distance);
 
-        
                 // sample the texture
                 return tex2D(_MainTex, i.uv) * _Color;
             }
